@@ -23,7 +23,7 @@ If Python is not installed, Python version 3.10.7 will be downloaded ([Python](h
 ## venv is activated
 
 ![](instructions\ready.gif)
-![][](https://github.com/Shergotty/create_py_venv_public/tree/main/instructions/ready.gif)
+![](https://github.com/Shergotty/create_py_venv_public/tree/main/instructions/ready.gif)
 
 ---
 ## uninstall virtual environment

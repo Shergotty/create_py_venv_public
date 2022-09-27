@@ -2,12 +2,12 @@
 
 ## installation virtual environment
 
-1. To setup the necessary virtual environment (**venv**), run [`setup.ps1`](setup.ps1) in your powershell terminal.
+To setup the necessary virtual environment (**venv**), run [`setup.ps1`](setup.ps1) in your powershell terminal.
 
-    ### open terminal:
+### open terminal:
 
-    ![](instructions\open_terminal.gif)
-    ![](https://github.com/Shergotty/create_py_venv_public/blob/main/instructions/open_terminal.gif)
+![](instructions\open_terminal.gif)
+![](https://github.com/Shergotty/create_py_venv_public/blob/main/instructions/open_terminal.gif)
 
 
 ### run [`setup.ps1`](setup.ps1) 

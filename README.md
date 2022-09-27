@@ -9,13 +9,14 @@
     ![](instructions\open_terminal.gif)
     ![](https://github.com/Shergotty/create_py_venv_public/blob/main/instructions/open_terminal.gif)
 
-If Python is not installed, Python version 3.10.7 will be downloaded ([Python](https://www.python.org/downloads/)) and the installer will be executed. Please install Python in order to setup the virtual environment and make sure you add your python installation folder to PATH (Checkbox at the end of installation). IF Python has to be installed, reboot your system in order to write your new systemvariable to your registry.
 
 ### run [`setup.ps1`](setup.ps1) 
 
 ```{ps}
 .\setup.ps1
 ```
+
+If Python is not installed, [Python](https://www.python.org/downloads/) version 3.10.7 will be downloaded and the installer will be executed. Please install Python in order to setup the virtual environment. If Python has to be installed, reboot your system in order to write your new systemvariable to your registry.
 
 ![](instructions\install_requirements.gif)
 ![](https://github.com/Shergotty/create_py_venv_public/blob/main/instructions/install_requirements.gif)

@@ -15,9 +15,9 @@ function install_python {
 
 
     Invoke-WebRequest -URI $uri -OutFile $out
-    Write-Output "please install python and restart setup.ps1 afterwards"
     Start-Process $out -Wait -ArgumentList '/quiet', 'InstallAllUsers=0', 'PrependPath=1', 'InstallLauncherAllUsers=0'
     $env:Path = [System.Environment]::GetEnvironmentVariable("Path", "Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path", "User")
+    python.exe -m pip install --upgrade pip
 
 }
 
@@ -38,7 +38,7 @@ if (!($p -is [System.Management.Automation.ErrorRecord] -or $version_number -lt 
 }
 else {
     # otherwise grab the version string from the error message and run install_python  
-    Write-Output $p.Exception.Message
+    Write-Output "python has not been found or your version number is lower than" $reference_version
     install_python
     setup_venv
 }

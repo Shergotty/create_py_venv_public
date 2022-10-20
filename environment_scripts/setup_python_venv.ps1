@@ -17,7 +17,6 @@ function install_python {
     Invoke-WebRequest -URI $uri -OutFile $out
     Start-Process $out -Wait -ArgumentList '/quiet', 'InstallAllUsers=0', 'PrependPath=1', 'InstallLauncherAllUsers=0'
     $env:Path = [System.Environment]::GetEnvironmentVariable("Path", "Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path", "User")
-    python.exe -m pip install --upgrade pip
 
 }
 

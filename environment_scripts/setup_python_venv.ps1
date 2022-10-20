@@ -8,7 +8,7 @@ $version_number = if (!($p -is [System.Management.Automation.ErrorRecord])) {
 
 function install_python {
 
-    $filename = "python-$python_version.exe"
+    $filename = "python-$python_version-amd64.exe"
     $uri = "https://www.python.org/ftp/python/$python_version/$filename"
     $outpath = "C:\Users\$env:UserName\Downloads\"    
     $out = $outpath + $filename

@@ -13,13 +13,20 @@ function install_python {
     $outpath = "C:\Users\$env:UserName\Downloads\"    
     $out = $outpath + $filename
 
-
+    Write-Output "Python $python_version will be downloaded. The Installer runs in the background and the Install path will be added to system variables."
+    Start-Sleep -seconds 1
+    $response = read-host "Press [enter] to continue or [any other key] (and then [enter]) to abort"
+    $aborted = ! [bool]$response
+    if (!$aborted) {exit}
+    
     Invoke-WebRequest -URI $uri -OutFile $out
+    Write-Output "Python installation started ..."
     Start-Process $out -Wait -ArgumentList '/quiet', 'InstallAllUsers=0', 'PrependPath=1', 'InstallLauncherAllUsers=0'
     $env:Path = [System.Environment]::GetEnvironmentVariable("Path", "Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path", "User")
 
+    Write-Output "... Python installation complete and system variables extendet"
     REMOVE-Item $out
-
+    Write-Output "Python installation file deleted"
 }
 
 function setup_venv {
@@ -39,7 +46,7 @@ if (!($p -is [System.Management.Automation.ErrorRecord] -or $version_number -lt 
 }
 else {
     # otherwise grab the version string from the error message and run install_python  
-    Write-Output "python has not been found or your version number is lower than" $reference_version
+    Write-Output "python has not been found or your version number is lower than Python $reference_version"
     install_python
     setup_venv
 }

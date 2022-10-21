@@ -16,7 +16,7 @@ To setup the necessary virtual environment (**venv**), run [`setup.ps1`](setup.p
 .\setup.ps1
 ```
 
-If Python is not installed, [Python](https://www.python.org/downloads/) version 3.10.7 will be downloaded and the installer will be executed.
+If Python is not installed, [Python](https://www.python.org/downloads/) version 3.10.8 will be downloaded and the installer will be executed in the background. Please wait until the installation has finishied.
 
 ![](instructions\install_requirements.gif)
 ![](https://github.com/Shergotty/create_py_venv_public/blob/main/instructions/install_requirements.gif)

@@ -14,19 +14,18 @@ function install_python {
     $out = $outpath + $filename
 
     Write-Output "Python $python_version will be downloaded. The Installer runs in the background and the Install path will be added to system variables."
-    Start-Sleep -seconds 1
+    Start-Sleep -seconds 0.5
     $response = read-host "Press [enter] to continue or [any other key] (and then [enter]) to abort"
     $aborted = ! [bool]$response
     if (!$aborted) {exit}
-    
+    Write-Output "Python installation filw will be downloaded to $outpath"
     Invoke-WebRequest -URI $uri -OutFile $out
     Write-Output "Python installation started ..."
     Start-Process $out -Wait -ArgumentList '/quiet', 'InstallAllUsers=0', 'PrependPath=1', 'InstallLauncherAllUsers=0'
     $env:Path = [System.Environment]::GetEnvironmentVariable("Path", "Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path", "User")
-
     Write-Output "... Python installation complete and system variables extendet"
     REMOVE-Item $out
-    Write-Output "Python installation file deleted"
+    Write-Output "Python installation file deleted from $outpath"
 }
 
 function setup_venv {

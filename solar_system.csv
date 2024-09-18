@@ -1,24 +1,24 @@
-system_id,body_id,body_name,distance_to_center (AU),distance_to_sun (AU),body_type,number_of_moons,parent_body_id
-1,1,Sun,0,0,Star,0,N/A
-1,2,Mercury,0.39,0.39,Planet,0,1
-1,3,Venus,0.72,0.72,Planet,0,1
-1,4,Earth,1,1,Planet,1,1
-1,5,Mars,1.52,1.52,Planet,2,1
-1,6,Jupiter,5.20,5.20,Planet,79,1
-1,7,Saturn,9.58,9.58,Planet,83,1
-1,8,Uranus,19.22,19.22,Planet,27,1
-1,9,Neptune,30.05,30.05,Planet,14,1
-1,10,Pluto (Dwarf),39.48,39.48,Dwarf Planet,5,1
-1,11,Ceres (Dwarf),2.77,2.77,Dwarf Planet,0,1
-1,12,Moon,1,1,Moon,0,4
-1,13,Phobos,1.52,1.52,Moon,0,5
-1,14,Deimos,1.52,1.52,Moon,0,5
-1,15,Europa,5.20,5.20,Moon,0,6
-1,16,Ganymede,5.20,5.20,Moon,0,6
-1,17,Callisto,5.20,5.20,Moon,0,6
-1,18,Io,5.20,5.20,Moon,0,6
-1,19,Titan,9.58,9.58,Moon,0,7
-1,20,Enceladus,9.58,9.58,Moon,0,7
-1,21,Miranda,19.22,19.22,Moon,0,8
-1,22,Triton,30.05,30.05,Moon,0,9
-1,23,Charon,39.48,39.48,Moon,0,10
+system_id,body_id,body_name,distance_to_center (AU),distance_to_sun (AU),body_type,number_of_moons,parent_body_id,inclination (°),x (AU),y (AU),z (AU),mass (Earth masses),planet_type,star_type
+1,1,Sun,0,0,Star,0,N/A,0.0,0.0,0.0,0.0,332,946,N/A,G-type main sequence star (G2V)
+1,2,Mercury,0.39,0.39,Planet,0,1,7.0,0.39,0.0,0.0,0.055,Terrestrial planet,N/A
+1,3,Venus,0.72,0.72,Planet,0,1,3.4,0.72,0.0,0.0,0.815,Terrestrial planet,N/A
+1,4,Earth,1,1,Planet,1,1,0.0,1.0,0.0,0.0,1.0,Terrestrial planet,N/A
+1,5,Mars,1.52,1.52,Planet,2,1,1.85,1.52,0.0,0.0,0.107,Terrestrial planet,N/A
+1,6,Jupiter,5.20,5.20,Planet,79,1,1.3,5.2,0.0,0.0,317.8,Gas giant,N/A
+1,7,Saturn,9.58,9.58,Planet,83,1,2.48,9.58,0.0,0.0,95.16,Gas giant,N/A
+1,8,Uranus,19.22,19.22,Planet,27,1,0.77,19.22,0.0,0.0,14.54,Ice giant,N/A
+1,9,Neptune,30.05,30.05,Planet,14,1,1.77,30.05,0.0,0.0,17.15,Ice giant,N/A
+1,10,Pluto (Dwarf),39.48,39.48,Dwarf Planet,5,1,17.16,39.48,0.0,0.0,0.00218,Dwarf planet,N/A
+1,11,Ceres (Dwarf),2.77,2.77,Dwarf Planet,0,1,10.59,2.77,0.0,0.0,0.00015,Dwarf planet,N/A
+1,12,Moon,1,1,Moon,0,4,5.145,1.0,0.0,0.0,0.0123,N/A,N/A
+1,13,Phobos,1.52,1.52,Moon,0,5,1.08,1.52,0.0,0.0,1.65 × 10⁻⁸,N/A,N/A
+1,14,Deimos,1.52,1.52,Moon,0,5,0.93,1.52,0.0,0.0,2.4 × 10⁻⁸,N/A,N/A
+1,15,Europa,5.20,5.20,Moon,0,6,0.47,5.2,0.0,0.0,0.00803,N/A,N/A
+1,16,Ganymede,5.20,5.20,Moon,0,6,0.20,5.2,0.0,0.0,0.025,N/A,N/A
+1,17,Callisto,5.20,5.20,Moon,0,6,0.19,5.2,0.0,0.0,0.018,N/A,N/A
+1,18,Io,5.20,5.20,Moon,0,6,0.04,5.2,0.0,0.0,0.015,N/A,N/A
+1,19,Titan,9.58,9.58,Moon,0,7,0.33,9.58,0.0,0.0,0.0225,N/A,N/A
+1,20,Enceladus,9.58,9.58,Moon,0,7,0.02,9.58,0.0,0.0,0.0008,N/A,N/A
+1,21,Miranda,19.22,19.22,Moon,0,8,4.34,19.22,0.0,0.0,0.0001,N/A,N/A
+1,22,Triton,30.05,30.05,Moon,0,9,156.8,30.05,0.0,0.0,0.00355,N/A,N/A
+1,23,Charon,39.48,39.48,Moon,0,10,0.0,39.48,0.0,0.0,0.000254,N/A,N/A

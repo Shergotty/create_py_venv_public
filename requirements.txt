@@ -6,3 +6,4 @@ SQLAlchemy
 django
 mssql-django
 flask
+duckdb

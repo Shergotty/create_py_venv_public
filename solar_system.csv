@@ -11,8 +11,8 @@ system_id,body_id,body_name,distance_to_center (AU),distance_to_sun (AU),body_ty
 1,10,Pluto (Dwarf),39.48,39.48,Dwarf Planet,5,1,17.16,39.48,0.0,0.0,0.00218,Dwarf planet,N/A
 1,11,Ceres (Dwarf),2.77,2.77,Dwarf Planet,0,1,10.59,2.77,0.0,0.0,0.00015,Dwarf planet,N/A
 1,12,Moon,1,1,Moon,0,4,5.145,1.0,0.0,0.0,0.0123,N/A,N/A
-1,13,Phobos,1.52,1.52,Moon,0,5,1.08,1.52,0.0,0.0,1.65 × 10⁻⁸,N/A,N/A
-1,14,Deimos,1.52,1.52,Moon,0,5,0.93,1.52,0.0,0.0,2.4 × 10⁻⁸,N/A,N/A
+1,13,Phobos,1.52,1.52,Moon,0,5,1.08,1.52,0.0,0.0,1.65 × 10**-8,N/A,N/A
+1,14,Deimos,1.52,1.52,Moon,0,5,0.93,1.52,0.0,0.0,2.4 × 10**-8,N/A,N/A
 1,15,Europa,5.20,5.20,Moon,0,6,0.47,5.2,0.0,0.0,0.00803,N/A,N/A
 1,16,Ganymede,5.20,5.20,Moon,0,6,0.20,5.2,0.0,0.0,0.025,N/A,N/A
 1,17,Callisto,5.20,5.20,Moon,0,6,0.19,5.2,0.0,0.0,0.018,N/A,N/A

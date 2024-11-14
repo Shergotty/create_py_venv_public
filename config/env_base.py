@@ -22,6 +22,5 @@ class EnvBase:
             EnvLoad.load_into_instance(cls, env_file_path=str(env_file_path))
             
             # Log the successful loading of environment variables
-            logger.info(f'Loaded environment for {cls.__name__} from {env_file_path}')
         else:
             raise FileNotFoundError(f"Could not determine the file path for module {cls.__module__}")

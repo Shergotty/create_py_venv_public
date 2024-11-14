@@ -1,13 +1,13 @@
 """
 Tableau Service Environment Loader Module
 
-This module, `env_service`, provides a specialized environment loading service 
-for Tableau-related modules. It ensures that each service instance loads environment 
+This module, `env_service`, provides a specialized environment loading service for modules.
+It ensures that each service instance loads environment 
 variables automatically from a `.env` file located in the service's directory.
 
 Classes:
     - EnvService: Inherits from `EnvBase` and is designed specifically for use in 
-      Tableau service modules. It loads the environment variables when initialized, 
+      modules. It loads the environment variables when initialized, 
       allowing seamless access to configuration settings without repetitive code.
 
 Usage:

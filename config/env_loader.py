@@ -1,7 +1,7 @@
 # config/env_loader.py
 
-from pydantic_settings import BaseSettings
-from pydantic import ValidationError
+from pydantic_settings import BaseSettings # type: ignore
+from pydantic import ValidationError # type: ignore
 from pathlib import Path
 
 class EnvHelperSettings(BaseSettings):

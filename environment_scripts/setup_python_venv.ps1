@@ -18,7 +18,7 @@ function install_python {
     $response = read-host "Press [enter] to continue or [any other key] (and then [enter]) to abort"
     $aborted = ! [bool]$response
     if (!$aborted) {exit}
-    Write-Output "Python installation filw will be downloaded to $outpath"
+    Write-Output "Python installation file will be downloaded to $outpath"
     Invoke-WebRequest -URI $uri -OutFile $out
     Write-Output "Python installation started ..."
     Start-Process $out -Wait -ArgumentList '/quiet', 'InstallAllUsers=0', 'PrependPath=1', 'InstallLauncherAllUsers=0'
